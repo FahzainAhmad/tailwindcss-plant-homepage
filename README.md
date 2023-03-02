@@ -24,8 +24,8 @@ Live view : <a href="https://tailwindcssproject.000webhostapp.com">Click here to
 
 <h2>Requirements 📋</h2>
 
-<p><strong>Internet is required as I have used CDN links</strong></p>
-<p><strong>NPM "node_modules" is required</strong></p>
+<p><strong>1. Internet is required as I have used CDN links</strong></p>
+<p><strong>2. NPM "node_modules" is required</strong></p>
 
 <h2>License 📜</h2>
 
