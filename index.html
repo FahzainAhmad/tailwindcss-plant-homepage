@@ -1,0 +1,703 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            content: ["*"],
+            theme: {
+                screens: {
+                    'sm': '320px',
+                    // => @media (min-width: 640px) { ... }
+
+                    'md': '400px',
+                    // => @media (min-width: 768px) { ... }
+
+                    'lg': '720px',
+                    // => @media (min-width: 1024px) { ... }
+
+                    'xl': '1080px',
+                    // => @media (min-width: 1280px) { ... }
+
+                    '2xl': '1280px',
+                    // => @media (min-width: 1536px) { ... }
+                },
+                extend: {
+                    spacing: {
+                        '66': '17rem',
+                        '82': '22rem',
+                        '83': '23rem',
+                        '84': '23.5rem',
+                        '94': '23.5rem',
+                        '100': '24.5rem',
+                        '102': '25rem',
+                        '103': '25.5rem',
+                        '104': '27rem',
+                        '105': '28rem',
+                        '106': '30rem',
+                    },
+                    borderRadius: {
+                        '4xl': '2rem',
+                    }
+                },
+                plugins: [],
+            }
+        }
+    </script>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+    <img src="mob-bg.png" id="big-img" class="w-full rounded-b-4xl">
+    <div class="absolute top-0 left-0 right-0 h-20 w-full bg-transparent">
+        <div class="flex float-left m-5">
+            <img src="logo.png" alt="PlantsOP" class="h-8">
+            <span class="text-xl font-semibold  px-3 text-emerald-900 my-1">PlantsOp</span>
+        </div>
+        <div class="float-right flex flex-row m-6">
+            <img src="search.png" alt="Menu" class="h-7 px-4">
+            <img src="menu.png" alt="Menu" class="h-7">
+        </div>
+    </div>
+
+
+    <div id="head" class="absolute md:top-20 sm:top-10 left-0 right-0 h-20">
+        <div id="head" class="absolute top-20 left-0 right-0h-10">
+            <span class="font-family: 'Poppins', sans-serif; text-lg text-gray-900 
+            font-semibold px-5">Best Quality Plants</span>
+
+        </div>
+        <div id="head" class="w-90 absolute top-32 left-0 right-0">
+            <span class="font-family: 'Poppins', sans-serif; text-4xl text-neutral-900 
+            font-semibold mx-5 block drop-shadow-lg shadow-green-500">Amazing Variety Of Plants Starting Just
+                $6</span>
+        </div>
+        <div id="head" class="absolute mx-5 md:top-66 sm:top-66 left-0 right-0">
+            <button class="bg-green-500 hover:bg-white hover:border hover:border-green-500
+                hover:text-green-500 text-white font-bold py-3 px-7 rounded-3xl">SHOP
+                NOW</button>
+        </div>
+    </div>
+    <div class="flex flex-col my-10">
+        <div class="flex flex-col items-center m-5">
+            <img src="plant-coll.png" class="w-9" alt="Plant Collection">
+            <div class="flex flex-col items-center m-5">
+                <span class="font-family: 'Poppins', sans-serif; text-md text-neutral-900 
+                font-bold block">Plants Collection</span>
+                <span class="font-family: 'Poppins', sans-serif; text-sm text-neutral-900 
+                font-light block  my-1">Any plants for your space</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center m-5">
+            <img src="shipped.png" class="w-9" alt="Plant Collection">
+            <div class="flex flex-col items-center m-5">
+                <span class="font-family: 'Poppins', sans-serif; text-md text-neutral-900 
+                font-bold block">Free Shipping</span>
+                <span class="font-family: 'Poppins', sans-serif; text-sm text-neutral-900 
+                font-light block  my-1">Free shipping on order</span>
+            </div>
+        </div>
+        <div class="flex flex-col items-center m-5 ">
+            <img src="money-back.png" class="w-9" alt="Plant Collection">
+            <div class="flex flex-col items-center m-5">
+                <span class="font-family: 'Poppins', sans-serif; text-md text-neutral-900 
+                font-bold block">100% Money Back</span>
+                <span class="font-family: 'Poppins', sans-serif; text-sm text-neutral-900 
+                font-light block my-1">If the item didn't suit you</span>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg mx-5 my-10">
+        <img class="w-full" src="pot1.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Beautiful Plants Varieties</div>
+            <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-5">
+            <span class="inline-block text-md font-mono text-green-500 mr-2 mb-3">SEE COLLECTION</span>
+        </div>
+    </div>
+    <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg mx-5 my-10">
+        <img class="w-full" src="pot2.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Trendy Cactus Varieties</div>
+            <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-5">
+            <span class="inline-block text-md font-mono text-green-500 mr-2 mb-3">SEE COLLECTION</span>
+        </div>
+    </div>
+    <div class="max-w-sm rounded-2xl overflow-hidden shadow-lg mx-5 my-10">
+        <img class="w-full" src="pot3.jpg" alt="Sunset in the mountains">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Gardening Accessories</div>
+            <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </p>
+        </div>
+        <div class="px-6 pt-4 pb-5">
+            <span class="inline-block text-md font-mono text-green-500 mr-2 mb-3">VISIT THE STORE</span>
+        </div>
+    </div>
+    <div class=" my-20 items-center">
+        <div class="flex flex-col items-center">
+            <span class="text-3xl font-semibold inline-block">Featured Plants</span>
+        </div>
+        <div class="flex flex-col items-center my-5">
+            <span class="text-lg font-light block items-center">Lorem ipsum dolor sit amet elit.</span>
+        </div>
+    </div>
+    <div class="flex flex-wrap justify-center">
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product1.png" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Plant
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Boncellensis Secullant</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">4.0 out of 5</p>
+                </div>
+                <p class="my-2">$34.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product2.jpg" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Cactus
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Classic Cactus Plant</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">3.0 out of 5</p>
+                </div>
+                <p class="my-2">$20.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product3.jpg" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Plant
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Sansevieria Plant</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">5.0 out of 5</p>
+                </div>
+                <p class="my-2">$12.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product4.jpg" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Cactus
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Trifasciata Terrarium</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">4.0 out of 5</p>
+                </div>
+                <p class="my-2">$49.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product1.png" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Plant
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Boncellensis Secullant</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">4.0 out of 5</p>
+                </div>
+                <p class="my-2">$34.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product2.jpg" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Cactus
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Classic Cactus Plant</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">3.0 out of 5</p>
+                </div>
+                <p class="my-2">$20.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product3.jpg" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Plant
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Sansevieria Plant</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">5.0 out of 5</p>
+                </div>
+                <p class="my-2">$12.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+        <div class="m-5 rounded-lg shadow-lg bg-white max-w-sm">
+            <a href="#!">
+                <img class="rounded-t-lg" src="product4.jpg" alt="" />
+            </a>
+            <div class="p-6">
+                <p class="text-gray-700 text-base mb-4">
+                    Cactus
+                </p>
+                <h5 class="text-gray-900 text-xl font-medium mb-2">Trifasciata Terrarium</h5>
+
+                <div class="flex items-center">
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <svg class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                        </path>
+                    </svg>
+                    <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">4.0 out of 5</p>
+                </div>
+                <p class="my-2">$49.00</p>
+                <button type="button"
+                    class="my-2 inline-block px-6 py-2.5 bg-green-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Buy
+                    Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="mx-5 my-28">
+        <p class="text-xl font-semibold">
+            Need help in choosing the right plants?
+        </p>
+        <div class="flex flex-row  my-10">
+            <img src="phone-call.png" class="w-5">
+            <p class="text-green-500 font-mono text-sm  mx-5">ASK FOR HELP</p>
+        </div>
+        <div class="flex flex-row w-80 my-10">
+            <p class=" font-extralight text-md  ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Est voluptate veniam dicta quos nam, voluptatum illo. <br> <br>Neque laborum esse, fugit quas commodi
+                ad
+                velit
+                dolores rerum aut, quam dignissimos inventore!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt illo voluptas consectetur,
+                blanditiis suscipit modi? Dolorem exercitationem aliquam velit ad officiis obcaecati possimus culpa,
+                fugit odio beatae cupiditate totam!
+            </p>
+        </div>
+    </div>
+    <div class="mx-5 my-28">
+        <p class="text-xl font-semibold">
+            Testimonials
+        </p>
+        <div class="flex flex-row w-80 my-10">
+            <p class=" font-extralight text-md  ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Est voluptate veniam.
+            </p>
+        </div>
+    </div>
+    <div class="mx-5">
+        <div class="max-w-sm rounded-r-2xl rounded-t-2xl overflow-hidden mx-2 my-10">
+
+            <img class="w-full" src="girl1.jpg" alt="Sunset in the mountains">
+            <div class="flex flex-row w-80 my-10">
+                <p class=" font-extralight text-md mx-5 ">
+                    dolores rerum aut, quam dignissimos inventore!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt illo voluptas
+                    consectetur,
+                </p>
+            </div>
+            <div class="px-6 pt-4">
+                <span class="inline-block text-xl font-semibold font-sans text-neutral-500 mr-2 mb-3">Sarah Jones</span>
+            </div>
+            <div class="px-6 pb-5">
+                <span class="inline-block text-md font-light font-sans text-neutral-500 mr-2 mb-3">Interior
+                    Designer</span>
+            </div>
+        </div>
+        <div class="max-w-sm rounded-r-2xl rounded-t-2xl overflow-hidden mx-2 my-10">
+            <img class="w-full" src="girl2.jpg" alt="Sunset in the mountains">
+            <div class="flex flex-row w-80 my-10">
+                <p class=" font-extralight text-md mx-5 ">
+                    dolores rerum aut, quam dignissimos inventore!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt illo voluptas
+                    consectetur,
+                </p>
+            </div>
+            <div class="px-6 pt-4">
+                <span class="inline-block text-xl font-semibold font-sans text-neutral-500 mr-2 mb-3">Jessica
+                    Foxx</span>
+            </div>
+            <div class="px-6 pb-5">
+                <span class="inline-block text-md font-light font-sans text-neutral-500 mr-2 mb-3">Student</span>
+            </div>
+        </div>
+        <div class="max-w-sm rounded-r-2xl rounded-t-2xl overflow-hidden mx-2 my-10">
+            <img class="w-full" src="girl3.jpg" alt="Sunset in the mountains">
+            <div class="flex flex-row w-80 my-10">
+                <p class=" font-extralight text-md mx-5 ">
+                    dolores rerum aut, quam dignissimos inventore!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus incidunt illo voluptas
+                    consectetur,
+                </p>
+            </div>
+            <div class="px-6 pt-4">
+                <span class="inline-block text-xl font-semibold font-sans text-neutral-500 mr-2 mb-3">Briana Luke</span>
+            </div>
+            <div class="px-6 pb-5">
+                <span class="inline-block text-md font-light font-sans text-neutral-500 mr-2 mb-3">Student</span>
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-wrap">
+        <div class=" my-20 items-center mx-5">
+            <div class="flex flex-col items-center">
+                <span class="text-3xl font-semibold inline-block text-center">Interested? Shop This Plant
+                    Collection!</span>
+            </div>
+            <div class="flex flex-col items-center my-5">
+                <span class="text-lg font-light block text-center">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Exercitationem dolor repudiandae illo illum voluptatibus ullam architecto dolore voluptas
+                    praesentium. Possimus explicabo laboriosam ipsam laborum. Delectus nam minima sequi ratione
+                    hic.</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <button class="bg-green-500 hover:bg-white hover:border hover:border-green-500
+                hover:text-green-500 text-white font-bold py-3 px-7 rounded-3xl">GO TO SHOP</button>
+            </div>
+        </div>
+        <img src="bg2.jpg" alt="" class="w-100">
+        <div>
+            <div class=" mt-20 mb-10 mx-5">
+                <div class="flex flex-col items-center">
+                    <span class="text-xl font-medium inline-block ">Get In Touch With Us For The Best Quality Plants &
+                        Succulents</span>
+                </div>
+                <div class="flex flex-col mt-5">
+                    <span class="text-lg font-light block ">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Exercitationem dolor repudiandae illo illum voluptatibus ullam architecto dolore
+                        voluptas.</span>
+                </div>
+            </div>
+            <div>
+                <img src="logo.png" alt="Logo" class="w-32 mx-5">
+                <p class="mx-5 mt-7 font-semibold text-4xl">PlantsOP</p>
+                <div class="flex flex-row mx-5 my-10">
+                    <img src="facebook.png" alt="Facebook" class="w-10 opacity-60">
+                    <img src="instagram.png" alt="Facebook" class="w-10 mx-5 opacity-60">
+                    <img src="linkedin.png" alt="Facebook" class="w-10 opacity-60">
+                    <img src="twitter.png" alt="Facebook" class="w-10 mx-5 opacity-60">
+                </div>
+            </div>
+            <div>
+                <p class="mx-5 mt-2 font-medium text-2xl">Quick Links</p>
+                <div class="flex flex-col">
+                    <p class="mx-5 mt-5 font-extralight text-md">Information</p>
+                    <p class="mx-5 mt-2 font-extralight text-md">Know more About Us</p>
+                    <p class="mx-5 mt-2 font-extralight text-md">Visit Store</p>
+                    <p class="mx-5 mt-2 font-extralight text-md">Let's connect</p>
+                </div>
+            </div>
+            <div class="my-10">
+                <p class="mx-5 mt-2 font-medium text-2xl">Important Links</p>
+                <div class="flex flex-col">
+                    <p class="mx-5 mt-5 font-extralight text-md">Privacy Policy</p>
+                    <p class="mx-5 mt-2 font-extralight text-md">Shipping Details</p>
+                    <p class="mx-5 mt-2 font-extralight text-md">Terms & Conditions</p>
+                    <p class="mx-5 mt-2 font-extralight text-md">Media Kit</p>
+                </div>
+            </div>
+            <div class="flex flex-col border-t-2 items-center mb-10">
+                <p class="mx-5 mt-4 font-light text-md">Copyright 2022 Plants OP</p>
+                <p class="mx-5 mt-2 font-light text-md">Powered By Plants OP</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
